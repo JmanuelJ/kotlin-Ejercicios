@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Intent Example</string>
+    <string name="app_welcome">Welcome to second Activity</string>
+    <string name="app_explicit">Explicit intent</string>
+    <string name="app_implicit">Implicit intent</string>
+</resources>
