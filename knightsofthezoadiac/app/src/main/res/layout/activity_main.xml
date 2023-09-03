@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="The Kinghts of Zodiac!"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/violet"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="155dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/violet"
+        android:hint="Details:  "
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Create"
+        android:onClick="createKnight"
+        app:layout_constraintTop_toBottomOf="@id/tvDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/btnPoUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Power Up"
+        android:onClick="powerUp"
+        app:layout_constraintTop_toBottomOf="@id/btnCreate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/btnFight"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fight"
+        android:onClick="fightKnight"
+        app:layout_constraintTop_toBottomOf="@id/btnPoUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/btnShowInf"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Show Info"
+        android:onClick="showInfo"
+        app:layout_constraintTop_toBottomOf="@id/btnFight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
