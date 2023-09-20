@@ -13,13 +13,24 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        binding.buttomFragment1.setOnClickListener{
-            goToFragment(Fragment1())
-        }
-        binding.buttomFragment2.setOnClickListener{
-            goToFragment(Fragment2())
+
+       initView()
+       setOnClickButtons()
+    }
+
+   private fun initView(){
+       binding = ActivityMainBinding.inflate(layoutInflater)
+       setContentView(binding.root)
+   }
+
+   private fun setOnClickButtons(){
+        binding.apply {
+            buttomFragment1.setOnClickListener{
+                goToFragment(Fragment1())
+            }
+            buttomFragment2.setOnClickListener{
+                goToFragment(Fragment2())
+            }
         }
     }
 
