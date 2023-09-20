@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gato</string>
+    <string name="app_title">Turn: </string>
+    <string name="btn_reset">RESET </string>
+</resources>
